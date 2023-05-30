@@ -10,6 +10,7 @@ namespace PlantApp
     public class PlantTrackerContext : DbContext
     {
         public DbSet<Plant> Plants { get; set; }
+        public DbSet<Room> Rooms { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
